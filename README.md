@@ -1,38 +1,29 @@
-# sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+# Getting Started
 
-## Creating a project
+- Provision Database
+`wrangler d1 create [db-name]`
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Generate Local Database
+`pnpm run db:generate`
 
-```sh
-# create a new project in the current directory
-npx sv create
+- Run Local Migrations
+`pnpm run db:migrate`
 
-# create a new project in my-app
-npx sv create my-app
-```
+- Gather Environment Variables
+https://www.better-auth.com/docs/installation
+create google auth app using google cloud and save client id and client secret to .env file
 
-## Developing
+- Save Environment Variables to Cloudflare
+`wrangler secret put [var-name]` and provide value from .env file
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Run Cloudflare Migrations
+`wrangler d1 migrations apply [db-name] --remote`
 
-```sh
-npm run dev
+- Deploy to Cloudflare
+`wrangler deploy`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+OR
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Develop locally
+`pnpm run dev`
