@@ -16,7 +16,15 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "betterauth-sveltekit-minimal-starter",
+			"database_id": "e7120c25-60fe-4fae-b7a8-c955bb0795eb",
+			"migrations_dir": "./src/lib/server/db/migrations"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
