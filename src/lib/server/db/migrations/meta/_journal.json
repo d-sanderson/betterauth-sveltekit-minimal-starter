@@ -8,6 +8,27 @@
       "when": 1765866026269,
       "tag": "0000_abandoned_magma",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1765948125398,
+      "tag": "0001_abnormal_earthquake",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1765948153594,
+      "tag": "0002_last_gunslinger",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1765948912352,
+      "tag": "0003_legal_maximus",
+      "breakpoints": true
     }
   ]
 }
